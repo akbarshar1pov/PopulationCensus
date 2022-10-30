@@ -27,19 +27,21 @@ class MainActivity : AppCompatActivity(), LocationListener {
         supportActionBar?.hide()
 
     }
+
     override fun onDestroy() {
         super.onDestroy()
         val sharedPref = this.getPreferences(MODE_PRIVATE)
         sharedPref.edit().remove("login").apply()
     }
+
     fun getLocation() {
         locationManager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
         if ((ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED)) {
             ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), locationPermissionCode)
         }
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 5f, this)
-
     }
+
     private fun getAddress(lat: Double, lng: Double): String {
         val geocoder = Geocoder(this, Locale.getDefault())
         val list = geocoder.getFromLocation(lat, lng, 1)
