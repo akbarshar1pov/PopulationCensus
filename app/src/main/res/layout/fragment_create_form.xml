@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/createFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateForm">
+
+    <TextView
+        android:id="@+id/createTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/create_title"
+        android:textAppearance="@style/population_"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/createCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="128dp"
+        android:gravity="top"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/createCity"
+        android:textAppearance="@style/createCity"
+        android:textSize="16sp"
+        android:translationY="-1.91sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createTitle" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttonLocation"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="110dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/createCity"
+        app:layout_constraintTop_toBottomOf="@+id/createTitle">
+
+        <ImageView
+            android:id="@+id/loc"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="32dp"
+            android:src="@drawable/pin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/createClc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="32dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@color/HavelockBlue"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/loc"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLocation">
+
+        <TextView
+            android:id="@+id/CreateSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="top"
+            android:lineSpacingExtra="8sp"
+            android:text="@string/createSex"
+            android:textAppearance="@style/createAbout"
+            android:textSize="16sp"
+            android:translationY="-3.78sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSex"
+            android:layout_width="156dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="164dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="18dp"
+            app:layout_constraintStart_toEndOf="@+id/CreateSex"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerSex"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:entries="@array/spinnerSex"
+                android:singleLine="true" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/createAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/createAge"
+            android:textAppearance="@style/createAbout"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/CreateSex"
+            app:layout_constraintTop_toBottomOf="@+id/CreateSex" />
+
+        <EditText
+            android:id="@+id/editAge"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/createAge"
+            app:layout_constraintTop_toBottomOf="@+id/cardSex" />
+
+        <TextView
+            android:id="@+id/createFamily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/createFamily"
+            android:textAppearance="@style/createAbout"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/createAge"
+            app:layout_constraintTop_toBottomOf="@+id/createAge" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardFamily"
+            android:layout_width="156dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="18dp"
+            app:layout_constraintStart_toEndOf="@+id/createFamily"
+            app:layout_constraintTop_toBottomOf="@+id/editAge">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerFamily"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:entries="@array/spinnerFamily"
+                android:singleLine="true" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/createForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/createForm"
+            app:backgroundTint="@color/HavelockBlue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/createClose"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createFamily" />
+
+        <ImageView
+            android:id="@+id/createClose"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="64dp"
+            android:src="@drawable/close"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/createForm"
+            app:layout_constraintTop_toBottomOf="@+id/cardFamily"
+            app:layout_constraintVertical_bias="0.18" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

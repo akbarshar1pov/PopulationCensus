@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="ru.mirea.populationcensus.SplashFragment"
+        android:label="fragment_splash2"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_bottomNavigation"
+            app:destination="@id/bottomNavigation"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="ru.mirea.populationcensus.onboard.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_bottomNavigation"
+            app:destination="@id/bottomNavigation"
+            app:popUpTo="@id/viewPagerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="ru.mirea.populationcensus.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/listOfForm"
+        android:name="ru.mirea.populationcensus.ListOfForm"
+        android:label="fragment_list_of_form"
+        tools:layout="@layout/fragment_list_of_form" />
+    <fragment
+        android:id="@+id/bottomNavigation"
+        android:name="ru.mirea.populationcensus.BottomNavigation"
+        android:label="fragment_bottom_navigation"
+        tools:layout="@layout/fragment_bottom_navigation" >
+        <action
+            android:id="@+id/action_bottomNavigation_to_createForm2"
+            app:destination="@id/createForm2" />
+        <action
+            android:id="@+id/action_bottomNavigation_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_bottomNavigation_to_regFragment"
+            app:destination="@id/regFragment" />
+        <action
+            android:id="@+id/action_bottomNavigation_to_statsFragment2"
+            app:destination="@id/statsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/createForm2"
+        android:name="ru.mirea.populationcensus.CreateForm"
+        android:label="fragment_create_form"
+        tools:layout="@layout/fragment_create_form" >
+        <action
+            android:id="@+id/action_createForm2_to_bottomNavigation"
+            app:destination="@id/bottomNavigation" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="ru.mirea.populationcensus.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ru.mirea.populationcensus.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_regFragment"
+            app:destination="@id/regFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/regFragment"
+        android:name="ru.mirea.populationcensus.RegFragment"
+        android:label="fragment_reg"
+        tools:layout="@layout/fragment_reg" >
+        <action
+            android:id="@+id/action_regFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="ru.mirea.populationcensus.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_bottomNavigation"
+            app:destination="@id/bottomNavigation"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfile2"
+        android:name="ru.mirea.populationcensus.UserProfile"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" >
+        <action
+            android:id="@+id/action_userProfile2_to_bottomNavigation"
+            app:destination="@id/bottomNavigation"
+            app:popUpTo="@id/userProfile2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/statsFragment2"
+        android:name="ru.mirea.populationcensus.StatsFragment"
+        android:label="fragment_stats"
+        tools:layout="@layout/fragment_stats" >
+        <action
+            android:id="@+id/action_statsFragment2_to_bottomNavigation"
+            app:destination="@id/bottomNavigation" />
+    </fragment>
+</navigation>

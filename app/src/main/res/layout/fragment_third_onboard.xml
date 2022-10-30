@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onboard.fragment.ThirdOnboard">
+
+    <ImageView
+        android:id="@+id/stats"
+        android:layout_width="216dp"
+        android:layout_height="216dp"
+        android:src="@drawable/analysis"
+        app:layout_constraintBottom_toTopOf="@+id/text_main_fragment3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875" />
+
+    <TextView
+        android:id="@+id/text_main_fragment3"
+        android:layout_width="327dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="12sp"
+        android:text="@string/text_main_fragment3"
+        android:textAppearance="@style/population_"
+        android:textSize="24sp"
+        android:translationY="-5.91sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_about_fragment3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_about_fragment3"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="9sp"
+        android:text="@string/text_about_fragment3"
+        android:textAppearance="@style/about"
+        app:layout_constraintBottom_toTopOf="@+id/next_button_fragment3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/next_button_fragment3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/next"
+        app:backgroundTint="@color/HavelockBlue"
+        app:layout_constraintBottom_toTopOf="@+id/page1_fragment3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/page1_fragment3"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/page2_fragment3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/unselected" />
+
+    <ImageView
+        android:id="@+id/page2_fragment3"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/page1_fragment3"
+        app:layout_constraintEnd_toStartOf="@+id/page3_fragment3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/page1_fragment3"
+        app:layout_constraintTop_toTopOf="@+id/page1_fragment3"
+        app:srcCompat="@drawable/unselected" />
+
+    <ImageView
+        android:id="@+id/page3_fragment3"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        app:layout_constraintBottom_toBottomOf="@+id/page2_fragment3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/page2_fragment3"
+        app:layout_constraintTop_toTopOf="@+id/page2_fragment3"
+        app:srcCompat="@drawable/selected" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

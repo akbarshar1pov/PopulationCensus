@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "398676384581",
+    "firebase_url": "https://populationcensus-4abb3-default-rtdb.firebaseio.com",
+    "project_id": "populationcensus-4abb3",
+    "storage_bucket": "populationcensus-4abb3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398676384581:android:4cc9107c36271189027c2c",
+        "android_client_info": {
+          "package_name": "ru.mirea.populationcensus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398676384581-2507o3f1n65tgfsgjbmj2c9miqjhe7fo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFI0V1NZEKtCxJZzX6FTEXvEnbtuCypIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "398676384581-2507o3f1n65tgfsgjbmj2c9miqjhe7fo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

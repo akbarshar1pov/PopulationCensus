@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/infoOfApp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoOfApp">
+
+    <TextView
+        android:id="@+id/info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/info_about"
+        android:textAppearance="@style/population_"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ques1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/info"
+        android:textSize="15sp"
+        android:padding="25dp"
+        android:text="@string/ques1"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/ques2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info_title" />
+
+    <TextView
+        android:id="@+id/ques2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/info"
+        android:textSize="15sp"
+        android:padding="25dp"
+        android:text="@string/ques2"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/ques3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ques1" />
+
+    <TextView
+        android:id="@+id/ques3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/info"
+        android:textSize="15sp"
+        android:padding="25dp"
+        android:text="@string/ques3"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ques2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
