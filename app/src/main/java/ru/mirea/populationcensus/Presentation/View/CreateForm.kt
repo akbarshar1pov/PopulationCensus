@@ -1,4 +1,4 @@
-package ru.mirea.populationcensus
+package ru.mirea.populationcensus.Presentation.View
 
 import android.Manifest
 import android.content.Context
@@ -19,6 +19,10 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
+import ru.mirea.populationcensus.Domain.DataBase.DataModel
+import ru.mirea.populationcensus.Domain.Model.Person
+import ru.mirea.populationcensus.MainActivity
+import ru.mirea.populationcensus.R
 
 
 class CreateForm : Fragment() {

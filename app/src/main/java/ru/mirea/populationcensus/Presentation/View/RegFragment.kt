@@ -1,4 +1,4 @@
-package ru.mirea.populationcensus
+package ru.mirea.populationcensus.Presentation.View
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -13,6 +13,8 @@ import androidx.navigation.fragment.findNavController
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import org.mindrot.jbcrypt.BCrypt
+import ru.mirea.populationcensus.Domain.Model.Users
+import ru.mirea.populationcensus.R
 
 class RegFragment : Fragment() {
 

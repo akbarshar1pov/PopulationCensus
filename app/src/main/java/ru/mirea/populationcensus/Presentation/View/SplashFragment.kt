@@ -1,4 +1,4 @@
-package ru.mirea.populationcensus
+package ru.mirea.populationcensus.Presentation.View
 
 import android.content.Context
 import android.os.Bundle
@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import ru.mirea.populationcensus.R
 
 class SplashFragment : Fragment() {
     override fun onCreateView(

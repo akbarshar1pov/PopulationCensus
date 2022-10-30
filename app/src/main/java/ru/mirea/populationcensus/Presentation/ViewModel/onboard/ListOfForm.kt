@@ -1,4 +1,4 @@
-package ru.mirea.populationcensus
+package ru.mirea.populationcensus.Presentation.ViewModel.onboard
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,6 +10,9 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.*
+import ru.mirea.populationcensus.Domain.Model.Person
+import ru.mirea.populationcensus.Presentation.Repository.CustomRecyclerAdapter
+import ru.mirea.populationcensus.R
 import java.util.*
 import kotlin.collections.ArrayList
 

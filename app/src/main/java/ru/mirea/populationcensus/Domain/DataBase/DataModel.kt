@@ -1,4 +1,4 @@
-package ru.mirea.populationcensus
+package ru.mirea.populationcensus.Domain.DataBase
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

@@ -1,10 +1,12 @@
-package ru.mirea.populationcensus
+package ru.mirea.populationcensus.Presentation.Repository
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import ru.mirea.populationcensus.Domain.Model.Person
+import ru.mirea.populationcensus.R
 
 class CustomRecyclerAdapter(private val formList: ArrayList<Person>) : RecyclerView
 .Adapter<CustomRecyclerAdapter.MyViewHolder>() {

@@ -1,4 +1,4 @@
-package ru.mirea.populationcensus
+package ru.mirea.populationcensus.Presentation.View
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,6 +10,7 @@ import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
+import ru.mirea.populationcensus.R
 
 class StatsFragment : Fragment() {
 

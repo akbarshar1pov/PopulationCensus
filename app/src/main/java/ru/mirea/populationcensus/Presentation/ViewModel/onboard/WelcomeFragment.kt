@@ -1,4 +1,4 @@
-package ru.mirea.populationcensus
+package ru.mirea.populationcensus.Presentation.ViewModel.onboard
 
 import android.content.Context
 import android.os.Bundle
@@ -7,9 +7,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.navigation.fragment.findNavController
+import ru.mirea.populationcensus.R
 
 class WelcomeFragment : Fragment() {
 

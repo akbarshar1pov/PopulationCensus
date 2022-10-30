@@ -5,7 +5,7 @@
     android:id="@+id/createFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateForm">
+    tools:context=".Presentation.View.CreateForm">
 
     <TextView
         android:id="@+id/createTitle"

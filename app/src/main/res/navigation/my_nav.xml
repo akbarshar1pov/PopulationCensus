@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="ru.mirea.populationcensus.SplashFragment"
+        android:name="ru.mirea.populationcensus.Presentation.View.SplashFragment"
         android:label="fragment_splash2"
         tools:layout="@layout/fragment_splash" >
         <action
@@ -23,7 +23,7 @@
     </fragment>
     <fragment
         android:id="@+id/viewPagerFragment"
-        android:name="ru.mirea.populationcensus.onboard.ViewPagerFragment"
+        android:name="ru.mirea.populationcensus.Presentation.ViewModel.onboard.ViewPagerFragment"
         android:label="fragment_view_pager"
         tools:layout="@layout/fragment_view_pager" >
         <action
@@ -34,17 +34,17 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="ru.mirea.populationcensus.HomeFragment"
+        android:name="ru.mirea.populationcensus.Presentation.ViewModel.onboard.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/listOfForm"
-        android:name="ru.mirea.populationcensus.ListOfForm"
+        android:name="ru.mirea.populationcensus.Presentation.ViewModel.onboard.ListOfForm"
         android:label="fragment_list_of_form"
         tools:layout="@layout/fragment_list_of_form" />
     <fragment
         android:id="@+id/bottomNavigation"
-        android:name="ru.mirea.populationcensus.BottomNavigation"
+        android:name="ru.mirea.populationcensus.Presentation.View.BottomNavigation"
         android:label="fragment_bottom_navigation"
         tools:layout="@layout/fragment_bottom_navigation" >
         <action
@@ -62,7 +62,7 @@
     </fragment>
     <fragment
         android:id="@+id/createForm2"
-        android:name="ru.mirea.populationcensus.CreateForm"
+        android:name="ru.mirea.populationcensus.Presentation.View.CreateForm"
         android:label="fragment_create_form"
         tools:layout="@layout/fragment_create_form" >
         <action
@@ -71,12 +71,12 @@
     </fragment>
     <fragment
         android:id="@+id/profile"
-        android:name="ru.mirea.populationcensus.Profile"
+        android:name="ru.mirea.populationcensus.Presentation.ViewModel.onboard.Profile"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/loginFragment"
-        android:name="ru.mirea.populationcensus.LoginFragment"
+        android:name="ru.mirea.populationcensus.Presentation.View.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -88,7 +88,7 @@
     </fragment>
     <fragment
         android:id="@+id/regFragment"
-        android:name="ru.mirea.populationcensus.RegFragment"
+        android:name="ru.mirea.populationcensus.Presentation.View.RegFragment"
         android:label="fragment_reg"
         tools:layout="@layout/fragment_reg" >
         <action
@@ -97,7 +97,7 @@
     </fragment>
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="ru.mirea.populationcensus.WelcomeFragment"
+        android:name="ru.mirea.populationcensus.Presentation.ViewModel.onboard.WelcomeFragment"
         android:label="fragment_welcome"
         tools:layout="@layout/fragment_welcome" >
         <action
@@ -108,7 +108,7 @@
     </fragment>
     <fragment
         android:id="@+id/userProfile2"
-        android:name="ru.mirea.populationcensus.UserProfile"
+        android:name="ru.mirea.populationcensus.Presentation.ViewModel.onboard.UserProfile"
         android:label="fragment_user_profile"
         tools:layout="@layout/fragment_user_profile" >
         <action
@@ -119,7 +119,7 @@
     </fragment>
     <fragment
         android:id="@+id/statsFragment2"
-        android:name="ru.mirea.populationcensus.StatsFragment"
+        android:name="ru.mirea.populationcensus.Presentation.View.StatsFragment"
         android:label="fragment_stats"
         tools:layout="@layout/fragment_stats" >
         <action

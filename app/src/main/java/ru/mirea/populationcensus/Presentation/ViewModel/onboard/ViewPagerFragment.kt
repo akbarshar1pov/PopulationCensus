@@ -1,4 +1,4 @@
-package ru.mirea.populationcensus.onboard
+package ru.mirea.populationcensus.Presentation.ViewModel.onboard
 
 import android.content.Context
 import android.os.Bundle
@@ -9,10 +9,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
+import ru.mirea.populationcensus.Presentation.Repository.ViewPagerAdapter
 import ru.mirea.populationcensus.R
-import ru.mirea.populationcensus.onboard.fragment.FirstOnboard
-import ru.mirea.populationcensus.onboard.fragment.SecOnboard
-import ru.mirea.populationcensus.onboard.fragment.ThirdOnboard
+import ru.mirea.populationcensus.Presentation.ViewModel.onboard.fragment.FirstOnboard
+import ru.mirea.populationcensus.Presentation.ViewModel.onboard.fragment.SecOnboard
+import ru.mirea.populationcensus.Presentation.ViewModel.onboard.fragment.ThirdOnboard
 
 
 class ViewPagerFragment : Fragment() {

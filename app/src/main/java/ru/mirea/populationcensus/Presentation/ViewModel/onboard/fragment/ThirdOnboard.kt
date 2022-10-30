@@ -1,4 +1,4 @@
-package ru.mirea.populationcensus.onboard.fragment
+package ru.mirea.populationcensus.Presentation.ViewModel.onboard.fragment
 
 import android.content.Context
 import android.os.Bundle

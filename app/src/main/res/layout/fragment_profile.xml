@@ -5,7 +5,7 @@
     android:id="@+id/profileUser"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Profile">
+    tools:context=".Presentation.ViewModel.onboard.Profile">
 
     <TextView
         android:id="@+id/titleUser"

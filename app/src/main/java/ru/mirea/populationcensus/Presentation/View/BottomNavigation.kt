@@ -1,4 +1,4 @@
-package ru.mirea.populationcensus
+package ru.mirea.populationcensus.Presentation.View
 
 import android.content.Context
 import android.os.Bundle
@@ -7,6 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import ru.mirea.populationcensus.*
+import ru.mirea.populationcensus.Presentation.ViewModel.onboard.*
 
 class BottomNavigation : Fragment() {
     private var flag = 0
@@ -22,19 +24,19 @@ class BottomNavigation : Fragment() {
         when(flag){
             1 ->{
                 activity?.supportFragmentManager?.beginTransaction()
-                    ?.replace(R.id.containerFragment,HomeFragment())
+                    ?.replace(R.id.containerFragment, HomeFragment())
                     ?.commit()
                 menu.selectedItemId = R.id.homeFragment
             }
             2 ->{
                 activity?.supportFragmentManager?.beginTransaction()
-                    ?.replace(R.id.containerFragment,ListOfForm())
+                    ?.replace(R.id.containerFragment, ListOfForm())
                     ?.commit()
                 menu.selectedItemId = R.id.listOfForm
             }
             3 ->{
                 activity?.supportFragmentManager?.beginTransaction()
-                    ?.replace(R.id.containerFragment,InfoOfApp())
+                    ?.replace(R.id.containerFragment, InfoOfApp())
                     ?.commit()
                 menu.selectedItemId = R.id.infoOfApp
             }
@@ -43,18 +45,18 @@ class BottomNavigation : Fragment() {
                 val login = sharedPref?.getString("login", "Пользователь")
                 if (login != "Пользователь"){
                     activity?.supportFragmentManager?.beginTransaction()
-                        ?.replace(R.id.containerFragment,UserProfile())
+                        ?.replace(R.id.containerFragment, UserProfile())
                         ?.commit()
                 }else{
                     activity?.supportFragmentManager?.beginTransaction()
-                        ?.replace(R.id.containerFragment,Profile())
+                        ?.replace(R.id.containerFragment, Profile())
                         ?.commit()
                 }
                 menu.selectedItemId = R.id.profileUser
             }
             else ->{
                 activity?.supportFragmentManager?.beginTransaction()
-                    ?.replace(R.id.containerFragment,HomeFragment())
+                    ?.replace(R.id.containerFragment, HomeFragment())
                     ?.commit()
                 menu.selectedItemId = R.id.homeFragment
             }
@@ -65,19 +67,19 @@ class BottomNavigation : Fragment() {
             when(it.itemId){
                 R.id.homeFragment -> {
                     activity?.supportFragmentManager?.beginTransaction()
-                        ?.replace(R.id.containerFragment,HomeFragment())
+                        ?.replace(R.id.containerFragment, HomeFragment())
                         ?.commit()
                     flag = 1
                 }
                 R.id.listOfForm -> {
                     activity?.supportFragmentManager?.beginTransaction()
-                        ?.replace(R.id.containerFragment,ListOfForm())
+                        ?.replace(R.id.containerFragment, ListOfForm())
                         ?.commit()
                     flag = 2
                 }
                 R.id.infoOfApp -> {
                     activity?.supportFragmentManager?.beginTransaction()
-                        ?.replace(R.id.containerFragment,InfoOfApp())
+                        ?.replace(R.id.containerFragment, InfoOfApp())
                         ?.commit()
                     flag = 3
                 }
@@ -86,11 +88,11 @@ class BottomNavigation : Fragment() {
                     val login = sharedPref?.getString("login", "Пользователь")
                     if (login != "Пользователь"){
                         activity?.supportFragmentManager?.beginTransaction()
-                            ?.replace(R.id.containerFragment,UserProfile())
+                            ?.replace(R.id.containerFragment, UserProfile())
                             ?.commit()
                     }else{
                         activity?.supportFragmentManager?.beginTransaction()
-                            ?.replace(R.id.containerFragment,Profile())
+                            ?.replace(R.id.containerFragment, Profile())
                             ?.commit()
                     }
                     flag = 4

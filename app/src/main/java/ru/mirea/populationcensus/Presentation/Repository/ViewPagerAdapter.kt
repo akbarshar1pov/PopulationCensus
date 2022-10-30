@@ -1,4 +1,4 @@
-package ru.mirea.populationcensus.onboard
+package ru.mirea.populationcensus.Presentation.Repository
 
 
 import androidx.fragment.app.Fragment

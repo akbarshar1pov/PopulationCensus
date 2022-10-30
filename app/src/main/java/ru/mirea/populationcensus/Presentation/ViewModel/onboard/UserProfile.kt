@@ -1,4 +1,4 @@
-package ru.mirea.populationcensus
+package ru.mirea.populationcensus.Presentation.ViewModel.onboard
 
 import android.content.Context
 import android.os.Bundle
@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.navigation.fragment.findNavController
+import ru.mirea.populationcensus.R
 
 class UserProfile : Fragment() {
 
@@ -32,7 +32,7 @@ class UserProfile : Fragment() {
             sharedPref?.edit()?.remove("login")?.apply()
 
             activity?.supportFragmentManager?.beginTransaction()
-                ?.replace(R.id.containerFragment,Profile())
+                ?.replace(R.id.containerFragment, Profile())
                 ?.commit()
             Toast.makeText(context, "Вы вышли из аккаунта!", Toast.LENGTH_SHORT)
                 .show()
